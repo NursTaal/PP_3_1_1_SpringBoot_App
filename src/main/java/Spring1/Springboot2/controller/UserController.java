@@ -19,10 +19,10 @@ public class UserController {
     }
 
     @GetMapping()
-    public String index(ModelMap model) {
+    public String AllUsers(ModelMap model) {
         //Получим всех людей и отправим на представление
         model.addAttribute("users", userService.getAllUsers());
-        return "users/index";
+        return "users/AllUsers";
     }
 
     @GetMapping("/{id}")

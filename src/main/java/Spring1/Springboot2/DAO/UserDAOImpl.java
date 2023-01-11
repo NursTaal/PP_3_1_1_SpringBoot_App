@@ -2,13 +2,14 @@ package Spring1.Springboot2.DAO;
 
 
 import Spring1.Springboot2.model.User;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-@Service
+@Repository
 public class UserDAOImpl implements UserDAO{
 
     @PersistenceContext

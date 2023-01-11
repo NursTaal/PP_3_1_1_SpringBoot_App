@@ -2,6 +2,7 @@ package Spring1.Springboot2.service;
 
 import Spring1.Springboot2.DAO.UserDAO;
 import Spring1.Springboot2.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,6 +12,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserDAO userDAO;
 
+    @Autowired
     public UserServiceImpl(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
